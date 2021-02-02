@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$max-width: 640px;
+$max-width: 800px;
+$mobile-breakpoint: 600px;
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -9,6 +10,7 @@ html {
 .App {
   &__container {
     max-width: $max-width;
+    padding: 0 20px;
     margin: 0 auto;
     text-align: center;
   }
@@ -17,6 +19,10 @@ html {
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 20px;
+
+    @media (max-width: $mobile-breakpoint) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__content {
@@ -38,5 +44,9 @@ html {
     width: 100%;
     justify-self: start;
     align-self: start;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin-top: 1em;
+    }
   }
 }

@@ -43,7 +43,7 @@ export function App() {
   function addEntryToLog(boxNum) {
     const { size } = activeMode;
     const rowNum = Math.ceil(boxNum / size);
-    const colNum = boxNum % size;
+    const colNum = boxNum % size || size;
 
     setPositionLog(positionLog => ([
       `row: ${rowNum}, col: ${colNum}`,
