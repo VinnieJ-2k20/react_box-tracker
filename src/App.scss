@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$max-width: 640px;
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  &__container {
+    max-width: $max-width;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+  }
+
+  &__content {
+    justify-self: stretch;
+  }
+
+  &__loading-error {
+    padding: 1em 0;
+    color: red;
+    text-align: start;
+  }
+
+  &__selector {
+    margin-bottom: 20px;
+  }
+
+  &__sidebar {
+    padding: 0;
+    width: 100%;
+    justify-self: start;
+    align-self: start;
+  }
+}

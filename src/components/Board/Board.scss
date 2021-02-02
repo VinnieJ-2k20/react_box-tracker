@@ -1,0 +1,19 @@
+.Board {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  display: grid;
+  gap: 1px 1px;
+  border: 2px solid black;
+  background-color: white;
+
+  &__box {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: white;
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
