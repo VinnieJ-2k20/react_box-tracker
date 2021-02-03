@@ -1,4 +1,4 @@
-const BASE_URL = 'http://demo1030918.mockable.io/'
+const BASE_URL = 'https://demo1030918.mockable.io/'
 
 export function getModes() {
   return fetch(`${BASE_URL}`)
